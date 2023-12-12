@@ -1,6 +1,6 @@
-package example.examplemod.block
+package com.github.aszecsei.crowmod.block
 
-import example.examplemod.ExampleMod
+import com.github.aszecsei.crowmod.CrowMod
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour
 import net.minecraftforge.registries.DeferredRegister
@@ -8,7 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries
 import thedarkcolour.kotlinforforge.forge.registerObject
 
 object ModBlocks {
-    val REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, ExampleMod.ID)
+    val REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, CrowMod.ID)
 
     // the returned ObjectHolderDelegate can be used as a property delegate
     // this is automatically registered by the deferred registry at the correct times

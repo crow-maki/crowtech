@@ -1,6 +1,6 @@
-package example.examplemod
+package com.github.aszecsei.crowmod
 
-import example.examplemod.block.ModBlocks
+import com.github.aszecsei.crowmod.block.ModBlocks
 import net.minecraft.client.Minecraft
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
@@ -18,9 +18,9 @@ import thedarkcolour.kotlinforforge.forge.runForDist
  *
  * An example for blocks is in the `blocks` package of this mod.
  */
-@Mod(ExampleMod.ID)
-object ExampleMod {
-    const val ID = "examplemod"
+@Mod(CrowMod.ID)
+object CrowMod {
+    const val ID = "crowmod"
 
     // the logger for our mod
     val LOGGER: Logger = LogManager.getLogger(ID)
@@ -33,11 +33,11 @@ object ExampleMod {
 
         val obj = runForDist(
             clientTarget = {
-                MOD_BUS.addListener(::onClientSetup)
+                MOD_BUS.addListener(CrowMod::onClientSetup)
                 Minecraft.getInstance()
             },
             serverTarget = {
-                MOD_BUS.addListener(::onServerSetup)
+                MOD_BUS.addListener(CrowMod::onServerSetup)
                 "test"
             })
 
