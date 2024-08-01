@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "crowtech:item/advancement/crow_icon",
+      "predicate": {
+        "minecraft:custom_model_data": 0.0
+      }
+    }
+  ]
+}

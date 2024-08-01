@@ -1,7 +1,9 @@
-package com.github.aszecsei.crowmod
+package com.github.aszecsei.crowtech
 
-import com.github.aszecsei.crowmod.block.ModBlocks
+import com.github.aszecsei.crowtech.common.config.CTConfig
+import com.github.aszecsei.crowtech.common.registries.*
 import net.minecraft.client.Minecraft
+import net.minecraft.resources.ResourceLocation
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent
 import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent
@@ -18,9 +20,13 @@ import thedarkcolour.kotlinforforge.forge.runForDist
  *
  * An example for blocks is in the `blocks` package of this mod.
  */
-@Mod(CrowMod.ID)
-object CrowMod {
-    const val ID = "crowmod"
+@Mod(CrowTech.ID)
+object CrowTech {
+    const val ID = "crowtech"
+
+    fun rl(path: String): ResourceLocation {
+        return ResourceLocation(ID, path)
+    }
 
     // the logger for our mod
     val LOGGER: Logger = LogManager.getLogger(ID)
@@ -28,16 +34,22 @@ object CrowMod {
     init {
         LOGGER.log(Level.INFO, "Hello world!")
 
-        // Register the KDeferredRegister to the mod-specific event bus
-        ModBlocks.REGISTRY.register(MOD_BUS)
+        // Load config values
+        CTConfig.register()
+
+        // Registration
+        CreativeModeTabRegistry.CREATIVE_MODE_TABS.register(MOD_BUS)
+        ItemRegistry.ITEMS.register(MOD_BUS)
+        BlockRegistry.BLOCKS.register(MOD_BUS)
+        BlockRegistry.BLOCK_ITEMS.register(MOD_BUS)
 
         val obj = runForDist(
             clientTarget = {
-                MOD_BUS.addListener(CrowMod::onClientSetup)
+                MOD_BUS.addListener(CrowTech::onClientSetup)
                 Minecraft.getInstance()
             },
             serverTarget = {
-                MOD_BUS.addListener(CrowMod::onServerSetup)
+                MOD_BUS.addListener(CrowTech::onServerSetup)
                 "test"
             })
 

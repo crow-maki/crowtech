@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "crowtech:block/osmium_ore"
+    }
+  }
+}

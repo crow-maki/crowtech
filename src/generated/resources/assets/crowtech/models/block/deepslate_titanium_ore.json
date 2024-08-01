@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "crowtech:block/deepslate_titanium_ore"
+  }
+}
