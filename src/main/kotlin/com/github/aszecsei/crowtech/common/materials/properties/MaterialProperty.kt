@@ -10,6 +10,14 @@ class MaterialProperty<T>(val id: String, val defaultValue: T) {
 
         val ORE_PROPERTY = MaterialProperty<OreProperty>("ore", OreProperty())
         val MEAN_RGB = MaterialProperty<Int>("mean_rgb", 0)
+        val INGOT_PROPERTY = MaterialProperty<IngotProperty>("ingot", IngotProperty())
+        val DUST_PROPERTY = MaterialProperty<DustProperty>("dust", DustProperty())
+        val NUGGET_PROPERTY = MaterialProperty<NuggetProperty>("nugget", NuggetProperty())
+
+        val PLATE_PROPERTY = MaterialProperty<PlateProperty>("plate", PlateProperty())
+        val ROD_PROPERTY = MaterialProperty<RodProperty>("rod", RodProperty())
+        val GEAR_PROPERTY = MaterialProperty<GearProperty>("gear", GearProperty())
+        val WIRE_PROPERTY = MaterialProperty<WireProperty>("wire", WireProperty())
     }
 
     init {

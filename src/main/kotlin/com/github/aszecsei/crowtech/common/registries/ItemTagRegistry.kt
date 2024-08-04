@@ -14,4 +14,5 @@ object ItemTagRegistry {
     val RAW_ORES = ItemTags.create(Reference.forge("raw_materials"))
     val ORES = ItemTags.create(Reference.forge("ores"))
     val GEMS = ItemTags.create(Reference.forge("gems"))
+    val WIRES = ItemTags.create(Reference.forge("wires"))
 }

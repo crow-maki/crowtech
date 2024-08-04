@@ -48,6 +48,90 @@ object CTTextures {
                     }
                 }
             }
+
+            if (material.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
+                val ingotProp = material.get(MaterialProperty.INGOT_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/ingot.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_ingot.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.NUGGET_PROPERTY)) {
+                val nuggetProp = material.get(MaterialProperty.NUGGET_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/nugget.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_nugget.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.DUST_PROPERTY)) {
+                val dustProp = material.get(MaterialProperty.DUST_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/dust.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_dust.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.PLATE_PROPERTY)) {
+                val plateProp = material.get(MaterialProperty.PLATE_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/plate.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_plate.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.ROD_PROPERTY)) {
+                val rodProp = material.get(MaterialProperty.ROD_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/rod.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_rod.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.GEAR_PROPERTY)) {
+                val gearProp = material.get(MaterialProperty.GEAR_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/gear.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_gear.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.WIRE_PROPERTY)) {
+                val wireProp = material.get(MaterialProperty.WIRE_PROPERTY)
+                defer.accept { ->
+                    val template = "crowtech:textures/materialsets/wire.png"
+                    mtm.getAssetAsTexture(template).use { top ->
+                        TextureHelper.colorize(top, colorRamp)
+                        val texturePath = "crowtech:textures/item/${material.id}_wire.png"
+                        mtm.addTexture(texturePath, top, true)
+                    }
+                }
+            }
         }
 
         return CompletableFuture.allOf(*futures.toTypedArray())

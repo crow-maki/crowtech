@@ -51,4 +51,7 @@ object Reference {
     fun fluid(path: String): ResourceLocation {
         return forge("molten/$path")
     }
+    fun wire(path: String): ResourceLocation {
+        return forge("wires/$path")
+    }
 }
