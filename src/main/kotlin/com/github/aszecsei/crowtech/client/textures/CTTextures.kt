@@ -25,7 +25,7 @@ object CTTextures {
         for (material in MaterialRegistry.MATERIALS.values) {
             val meanRgb = material.get(MaterialProperty.MEAN_RGB)
             if (meanRgb == 0) {
-                CrowTech.LOGGER.error("Missing mean RGB for material $material.id")
+                CrowTech.LOGGER.info("Missing mean RGB for material $material.id")
                 continue
             }
 
@@ -33,17 +33,34 @@ object CTTextures {
 
             if (material.properties.containsKey(MaterialProperty.ORE_PROPERTY)) {
                 val oreProp = material.get(MaterialProperty.ORE_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/ores/${material.id}.png"
-                    for (stratum in oreProp.strata) {
-                        val from = stratum.baseTexture
-                        mtm.getAssetAsTexture(stratum.baseTexture.toString()).use { image ->
-                            mtm.getAssetAsTexture(template).use { top ->
-                                TextureHelper.colorize(top, colorRamp)
-                                val oreId = if (stratum == Strata.STONE) "${material.id}_ore" else "${stratum.id}_${material.id}_ore"
-                                val texturePath = "crowtech:textures/block/${oreId}.png"
-                                mtm.addTexture(texturePath, TextureHelper.blend(image, top), true)
+                if (oreProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/ores/${material.id}.png"
+                        for (stratum in oreProp.strata) {
+                            val from = stratum.baseTexture
+                            mtm.getAssetAsTexture(stratum.baseTexture.toString()).use { image ->
+                                mtm.getAssetAsTexture(template).use { top ->
+                                    TextureHelper.colorize(top, colorRamp)
+                                    val oreId =
+                                        if (stratum == Strata.STONE) "${material.id}_ore" else "${stratum.id}_${material.id}_ore"
+                                    val texturePath = "crowtech:textures/block/${oreId}.png"
+                                    mtm.addTexture(texturePath, TextureHelper.blend(image, top), true)
+                                }
                             }
+                        }
+                    }
+                }
+            }
+
+            if (material.properties.containsKey(MaterialProperty.RAW_PROPERTY)) {
+                val rawProp = material.get(MaterialProperty.RAW_PROPERTY)
+                if (rawProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/raw_ore.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/raw_${material.id}_ore.png"
+                            mtm.addTexture(texturePath, top, true)
                         }
                     }
                 }
@@ -51,84 +68,98 @@ object CTTextures {
 
             if (material.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
                 val ingotProp = material.get(MaterialProperty.INGOT_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/ingot.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_ingot.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (ingotProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/ingots/${ingotProp.texture.path}.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_ingot.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.NUGGET_PROPERTY)) {
                 val nuggetProp = material.get(MaterialProperty.NUGGET_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/nugget.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_nugget.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (nuggetProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/nugget.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_nugget.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.DUST_PROPERTY)) {
                 val dustProp = material.get(MaterialProperty.DUST_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/dust.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_dust.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (dustProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/dust.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_dust.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.PLATE_PROPERTY)) {
                 val plateProp = material.get(MaterialProperty.PLATE_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/plate.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_plate.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (plateProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/plate.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_plate.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.ROD_PROPERTY)) {
                 val rodProp = material.get(MaterialProperty.ROD_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/rod.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_rod.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (rodProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/rod.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_rod.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.GEAR_PROPERTY)) {
                 val gearProp = material.get(MaterialProperty.GEAR_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/gear.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_gear.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (gearProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/gear.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_gear.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }
 
             if (material.properties.containsKey(MaterialProperty.WIRE_PROPERTY)) {
                 val wireProp = material.get(MaterialProperty.WIRE_PROPERTY)
-                defer.accept { ->
-                    val template = "crowtech:textures/materialsets/wire.png"
-                    mtm.getAssetAsTexture(template).use { top ->
-                        TextureHelper.colorize(top, colorRamp)
-                        val texturePath = "crowtech:textures/item/${material.id}_wire.png"
-                        mtm.addTexture(texturePath, top, true)
+                if (wireProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/wire.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}_wire.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
                     }
                 }
             }

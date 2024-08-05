@@ -16,6 +16,7 @@ object ItemRegistry {
     val ADVANCEMENT_ICON by ITEMS.registerObject("advancement_icon") { Item(Item.Properties()) }
 
     val INGOTS = TreeMap<String, RegistryObject<Item>>()
+    val RAW_ORES = TreeMap<String, RegistryObject<Item>>()
     val NUGGETS = TreeMap<String, RegistryObject<Item>>()
     val DUSTS = TreeMap<String, RegistryObject<Item>>()
 
@@ -26,34 +27,54 @@ object ItemRegistry {
 
     init {
         MaterialRegistry.MATERIALS.forEach { (id, material) ->
+            if (material.properties.containsKey(MaterialProperty.RAW_PROPERTY)) {
+                val rawProp = material.get(MaterialProperty.RAW_PROPERTY)
+                if (rawProp.generate) {
+                    RAW_ORES[id] = ITEMS.register("raw_${id}_ore") { Item(Item.Properties()) }
+                }
+            }
             if (material.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
                 val ingotProp = material.get(MaterialProperty.INGOT_PROPERTY)
-                INGOTS[id] = ITEMS.register("${id}_ingot") { Item(Item.Properties()) }
+                if (ingotProp.generate) {
+                    INGOTS[id] = ITEMS.register("${id}_ingot") { Item(Item.Properties()) }
+                }
             }
             if (material.properties.containsKey(MaterialProperty.NUGGET_PROPERTY)) {
                 val nuggetProp = material.get(MaterialProperty.NUGGET_PROPERTY)
-                NUGGETS[id] = ITEMS.register("${id}_nugget") { Item(Item.Properties()) }
+                if (nuggetProp.generate) {
+                    NUGGETS[id] = ITEMS.register("${id}_nugget") { Item(Item.Properties()) }
+                }
             }
             if (material.properties.containsKey(MaterialProperty.DUST_PROPERTY)) {
                 val dustProp = material.get(MaterialProperty.DUST_PROPERTY)
-                DUSTS[id] = ITEMS.register("${id}_dust") { Item(Item.Properties()) }
+                if (dustProp.generate) {
+                    DUSTS[id] = ITEMS.register("${id}_dust") { Item(Item.Properties()) }
+                }
             }
 
             if (material.properties.containsKey(MaterialProperty.PLATE_PROPERTY)) {
                 val plateProp = material.get(MaterialProperty.PLATE_PROPERTY)
-                PLATES[id] = ITEMS.register("${id}_plate") { Item(Item.Properties()) }
+                if (plateProp.generate) {
+                    PLATES[id] = ITEMS.register("${id}_plate") { Item(Item.Properties()) }
+                }
             }
             if (material.properties.containsKey(MaterialProperty.ROD_PROPERTY)) {
                 val rodProp = material.get(MaterialProperty.ROD_PROPERTY)
-                RODS[id] = ITEMS.register("${id}_rod") { Item(Item.Properties()) }
+                if (rodProp.generate) {
+                    RODS[id] = ITEMS.register("${id}_rod") { Item(Item.Properties()) }
+                }
             }
             if (material.properties.containsKey(MaterialProperty.GEAR_PROPERTY)) {
                 val gearProp = material.get(MaterialProperty.GEAR_PROPERTY)
-                GEARS[id] = ITEMS.register("${id}_gear") { Item(Item.Properties()) }
+                if (gearProp.generate) {
+                    GEARS[id] = ITEMS.register("${id}_gear") { Item(Item.Properties()) }
+                }
             }
             if (material.properties.containsKey(MaterialProperty.WIRE_PROPERTY)) {
                 val wireProp = material.get(MaterialProperty.WIRE_PROPERTY)
-                WIRES[id] = ITEMS.register("${id}_wire") { Item(Item.Properties()) }
+                if (wireProp.generate) {
+                    WIRES[id] = ITEMS.register("${id}_wire") { Item(Item.Properties()) }
+                }
             }
         }
     }

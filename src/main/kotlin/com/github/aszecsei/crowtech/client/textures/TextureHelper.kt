@@ -2,7 +2,6 @@ package com.github.aszecsei.crowtech.client.textures
 
 import com.github.aszecsei.crowtech.client.textures.colorramp.IColorRamp
 import com.mojang.blaze3d.platform.NativeImage
-import net.minecraft.client.renderer.LightTexture.getBrightness
 import java.awt.Color
 import kotlin.math.max
 

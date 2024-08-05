@@ -21,6 +21,10 @@ class LanguagesProvider(packOutput: PackOutput): LanguageProvider(packOutput, Cr
     private fun addItems() {
         this.add("itemGroup." + CrowTech.ID, "CrowTech")
 
+        ItemRegistry.RAW_ORES.forEach { (id, item) ->
+            val mat = MaterialRegistry.MATERIALS[id]!!
+            this.addItem(item, "Raw ${mat.name} Ore")
+        }
         ItemRegistry.INGOTS.forEach { (id, item) ->
             val mat = MaterialRegistry.MATERIALS[id]!!
             this.addItem(item, "${mat.name} Ingot")

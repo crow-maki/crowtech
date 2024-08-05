@@ -18,11 +18,18 @@ object BlockRegistry {
         MaterialRegistry.MATERIALS.forEach { (id, material) ->
             if (material.properties.containsKey(MaterialProperty.ORE_PROPERTY)) {
                 val oreProp = material.get(MaterialProperty.ORE_PROPERTY)
-                for (stratum in oreProp.strata) {
-                    val oreId = if (stratum == Strata.STONE) "${id}_ore" else "${stratum.id}_${id}_ore"
-                    CrowTech.LOGGER.info("Registering $oreId")
-                    val block by BLOCKS.registerObject(oreId) { OreBlock(material.get(MaterialProperty.ORE_PROPERTY), stratum) }
-                    BLOCK_ITEMS.register(oreId) { BlockItem(block, Item.Properties()) }
+                if (oreProp.generate) {
+                    for (stratum in oreProp.strata) {
+                        val oreId = if (stratum == Strata.STONE) "${id}_ore" else "${stratum.id}_${id}_ore"
+                        CrowTech.LOGGER.info("Registering $oreId")
+                        val block by BLOCKS.registerObject(oreId) {
+                            OreBlock(
+                                material.get(MaterialProperty.ORE_PROPERTY),
+                                stratum
+                            )
+                        }
+                        BLOCK_ITEMS.register(oreId) { BlockItem(block, Item.Properties()) }
+                    }
                 }
             }
         }

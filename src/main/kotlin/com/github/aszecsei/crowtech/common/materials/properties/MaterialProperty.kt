@@ -9,6 +9,7 @@ class MaterialProperty<T>(val id: String, val defaultValue: T) {
         val PROPERTIES = Collections.unmodifiableCollection(PROPERTY_IDS.values)
 
         val ORE_PROPERTY = MaterialProperty<OreProperty>("ore", OreProperty())
+        val RAW_PROPERTY = MaterialProperty<RawProperty>("raw_ore", RawProperty())
         val MEAN_RGB = MaterialProperty<Int>("mean_rgb", 0)
         val INGOT_PROPERTY = MaterialProperty<IngotProperty>("ingot", IngotProperty())
         val DUST_PROPERTY = MaterialProperty<DustProperty>("dust", DustProperty())

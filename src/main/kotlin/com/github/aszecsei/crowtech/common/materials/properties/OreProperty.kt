@@ -7,6 +7,7 @@ class OreProperty() {
     var max = 1
     var uniformCount = false
     var strata = mutableSetOf(Strata.STONE, Strata.DEEPSLATE)
+    var generate = true
 
     fun withMin(min: Int): OreProperty {
         this.min = min
@@ -23,6 +24,10 @@ class OreProperty() {
     fun withStrata(vararg strata: Strata): OreProperty {
         this.strata.clear()
         this.strata.addAll(strata)
+        return this
+    }
+    fun doNotGenerate(): OreProperty {
+        this.generate = false
         return this
     }
 }
