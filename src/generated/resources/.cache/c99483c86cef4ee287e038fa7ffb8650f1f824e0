@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-05T13:56:30.1417039	Item Models: crowtech
+// 1.20.1	2024-08-05T14:16:06.381385	Item Models: crowtech
 15353f6f154d34c95a4cc6b269820508ad1c7598 assets/crowtech/models/item/advancement/crow_icon.json
 58bebf36727de2107ad03275e4cf8564627e8ffd assets/crowtech/models/item/advancement_icon.json
 c1bbfea59150125a247354c439bdcc3335911f7d assets/crowtech/models/item/aluminum_dust.json
@@ -93,18 +93,18 @@ fbb66b01b32c629a508e8223e6aa6a29b65467c0 assets/crowtech/models/item/platinum_in
 4099c520fe7bdd027bce08322bf310423092806e assets/crowtech/models/item/platinum_plate.json
 aad4136b4ce293e0db1e50f3e9706fc0c0dc00f2 assets/crowtech/models/item/platinum_rod.json
 dc85b1fbe9ee79a039819431a474e1df1ab56677 assets/crowtech/models/item/platinum_wire.json
-f2e50f91e2a2a8103192d4946096a599670fdc31 assets/crowtech/models/item/raw_aluminum_ore.json
-eda1c32652c8b6349f5081208bb35288e5c9b9aa assets/crowtech/models/item/raw_iridium_ore.json
-5858ce234bc1542d136f7f2ef185619d141d0175 assets/crowtech/models/item/raw_lead_ore.json
-30364119d1ac085a9276aa6ae3bd210ffe264c0c assets/crowtech/models/item/raw_nickel_ore.json
-7e7c8a1c14b14cf12a9c8a18df59de7942c072a4 assets/crowtech/models/item/raw_osmium_ore.json
-26ade62a513dab0e043c3bf6113cbbf6de3081d3 assets/crowtech/models/item/raw_platinum_ore.json
-7781ebbe25f3cb6a542347227658a198cb7ece05 assets/crowtech/models/item/raw_silver_ore.json
-f92225ffc7fa40478277d86f86a1a7fac88d5af8 assets/crowtech/models/item/raw_tin_ore.json
-8a918fbed4470212638fe212b99c69fe8bb707c7 assets/crowtech/models/item/raw_titanium_ore.json
-142f95074d0199025ae0bd5951f88922859e3cfb assets/crowtech/models/item/raw_tungsten_ore.json
-d7d9338d7a00fe2ca6fcdec961fe46a69e18ec26 assets/crowtech/models/item/raw_uranium_ore.json
-58e986df20271cf65a4a143bdb8dbab673eba441 assets/crowtech/models/item/raw_zinc_ore.json
+f39c234431639357ed29ae45cc886c687ba330ee assets/crowtech/models/item/raw_aluminum.json
+fa24676fd3a8419616cb21dcee6aa9925583d94c assets/crowtech/models/item/raw_iridium.json
+bc6ccc6d921394964ccb466287386364764665d2 assets/crowtech/models/item/raw_lead.json
+52fccaf3ec34d2a2fb612fc1cfa98db876b83339 assets/crowtech/models/item/raw_nickel.json
+7c9ff9f7617dd176f5d8546c8b9cff8950ec4e65 assets/crowtech/models/item/raw_osmium.json
+a37c765b02d1fa7ba6d92f3c3a9af122bbeb0862 assets/crowtech/models/item/raw_platinum.json
+6c9e957cb001bd2f2a6a6e5d09ff876ff85bd071 assets/crowtech/models/item/raw_silver.json
+bc18232bc064427f03bf645a4ea3e368e3150bc2 assets/crowtech/models/item/raw_tin.json
+61b3d9086452809aee60b0bab8f744ef1341ba30 assets/crowtech/models/item/raw_titanium.json
+0596372ff3588910bbe3cad81368770f8f59c63f assets/crowtech/models/item/raw_tungsten.json
+5a4d02dea2b8094595e72c73af9921fea4bc393e assets/crowtech/models/item/raw_uranium.json
+13aeff91bf52d0ceb4ee1458ada4fbc130c67e36 assets/crowtech/models/item/raw_zinc.json
 9fb939b5e226aff1d6b1f2c9026c8e9484a0bfb0 assets/crowtech/models/item/rose_gold_dust.json
 3eef057754fdc0711ed161000f80f1b74f1ad943 assets/crowtech/models/item/rose_gold_gear.json
 a0bcea94d3f2ea548f7b8a930c388df785cab541 assets/crowtech/models/item/rose_gold_ingot.json

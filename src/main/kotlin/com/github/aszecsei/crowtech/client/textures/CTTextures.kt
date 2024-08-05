@@ -59,7 +59,7 @@ object CTTextures {
                         val template = "crowtech:textures/materialsets/raw_ore.png"
                         mtm.getAssetAsTexture(template).use { top ->
                             TextureHelper.colorize(top, colorRamp)
-                            val texturePath = "crowtech:textures/item/raw_${material.id}_ore.png"
+                            val texturePath = "crowtech:textures/item/raw_${material.id}.png"
                             mtm.addTexture(texturePath, top, true)
                         }
                     }

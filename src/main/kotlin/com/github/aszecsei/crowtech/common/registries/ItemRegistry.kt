@@ -30,7 +30,7 @@ object ItemRegistry {
             if (material.properties.containsKey(MaterialProperty.RAW_PROPERTY)) {
                 val rawProp = material.get(MaterialProperty.RAW_PROPERTY)
                 if (rawProp.generate) {
-                    RAW_ORES[id] = ITEMS.register("raw_${id}_ore") { Item(Item.Properties()) }
+                    RAW_ORES[id] = ITEMS.register("raw_${id}") { Item(Item.Properties()) }
                 }
             }
             if (material.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
