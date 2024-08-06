@@ -20,3 +20,6 @@ build
 # other
 eclipse
 run
+
+# cache files
+src/generated/resources/.cache
