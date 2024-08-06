@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-05T14:16:06.3833857	Textures
+// 1.20.1	2024-08-05T17:21:12.0766482	Textures
 5e9af0cac3cc4067c59a5b4d63de3e8689c8c084 assets/crowtech/textures/block/aluminum_ore.png
 6aa979a5ceb17582de6fb02ba3d82f17dd2e42a3 assets/crowtech/textures/block/deepslate_aluminum_ore.png
 6f81d394fe2d0e509b14ec9cc5c18488a88d22db assets/crowtech/textures/block/deepslate_iridium_ore.png
@@ -6,6 +6,7 @@ a0843286e163ccf332abffb52c36ddb97213c215 assets/crowtech/textures/block/deepslat
 25c308ef13feabc60f245e17d2638ee096fb7743 assets/crowtech/textures/block/deepslate_nickel_ore.png
 9ef3997e46c064d2a761fbc297e5f8fe78871252 assets/crowtech/textures/block/deepslate_osmium_ore.png
 d507cff79b7092f97d0bf43102d8045aa1315fa1 assets/crowtech/textures/block/deepslate_platinum_ore.png
+bd0888e64a4f676449c044bdb9659a4d6b762bbe assets/crowtech/textures/block/deepslate_ruby_ore.png
 7f06665ba036753dd2899f7ace425cc6f204431a assets/crowtech/textures/block/deepslate_silver_ore.png
 0a4d089eab4b88696e4b568b9fc1e4996cd90c7c assets/crowtech/textures/block/deepslate_tin_ore.png
 6c982027da7b848967ee64209efccb7dc28cc7f4 assets/crowtech/textures/block/deepslate_titanium_ore.png
@@ -17,6 +18,7 @@ e9b906450f1a49e3d64bb1a560889be83df65116 assets/crowtech/textures/block/deepslat
 d440965870a2aa16237be88863744983d83c6e75 assets/crowtech/textures/block/nickel_ore.png
 7d938d059f3029bf7d352f00a2e40c31cad658af assets/crowtech/textures/block/osmium_ore.png
 90354c4bd2a95791b43bbf20a8ae9e7626f84cc4 assets/crowtech/textures/block/platinum_ore.png
+6a342f87bb64ebcafc824d857fcfbe41ef4750ab assets/crowtech/textures/block/ruby_ore.png
 b27c4d4d6419e688d25f4edfac532b79f8c41e89 assets/crowtech/textures/block/silver_ore.png
 7108a054719bcb84d3b480c4a56e088e4f6d4484 assets/crowtech/textures/block/tin_ore.png
 0bd838e98cad87a7a24589a1e616b387c53b55c4 assets/crowtech/textures/block/titanium_ore.png
@@ -53,9 +55,13 @@ e373acc74b39c495882768abcb2d6a8bcfd4343a assets/crowtech/textures/item/bronze_ro
 328626a8bde49f01d4bc8cdf1c93fa7331897b1f assets/crowtech/textures/item/bronze_wire.png
 47d3ac586bd3701b3416be26d7292584ab73e277 assets/crowtech/textures/item/copper_dust.png
 d455e986f40506c82459706a56e8e8159bc4d2b7 assets/crowtech/textures/item/copper_gear.png
+8877b41c0270eded01f238f459a400761b69a5c1 assets/crowtech/textures/item/copper_nugget.png
 fc3e6b6d35c66dc41d4181bcb2f30af28266c4d0 assets/crowtech/textures/item/copper_plate.png
 a7f2da76a8197099616ba51f6151634a976c9903 assets/crowtech/textures/item/copper_rod.png
 7b28a5830f05ab2dbb11ccdee007fad58a41e40d assets/crowtech/textures/item/copper_wire.png
+d55463964440b4ae90eb33bf01749626fd0c8f95 assets/crowtech/textures/item/diamond_dust.png
+163411d281d93ca7debe42c7b0b369340460ab7b assets/crowtech/textures/item/diamond_gear.png
+58b1b04d3627fea0c4896265ac068a163240cb09 assets/crowtech/textures/item/diamond_plate.png
 a83af75e940369c0f4fd380446c687443067d5e8 assets/crowtech/textures/item/electrum_dust.png
 83b16a0be44bfbc0ab2d1d84b6120cd22fd7c2da assets/crowtech/textures/item/electrum_gear.png
 b3169df24cdcd88f8e8db95a24495d762055f709 assets/crowtech/textures/item/electrum_ingot.png
@@ -63,6 +69,9 @@ b3169df24cdcd88f8e8db95a24495d762055f709 assets/crowtech/textures/item/electrum_
 7a4166ea8c5a6f30b74d5cdb32d8e62aab16abd3 assets/crowtech/textures/item/electrum_plate.png
 e9a445a8ed5d6beb1b53257c1afbbd79d24356e5 assets/crowtech/textures/item/electrum_rod.png
 6967fcf6987b6a80234e52bcdb26516c0315cfb2 assets/crowtech/textures/item/electrum_wire.png
+8954e856a6ab5fad6ab5ef588697b4ba155c7100 assets/crowtech/textures/item/emerald_dust.png
+7619525809fa1450636fb8a3b715aa9dd4690dfe assets/crowtech/textures/item/emerald_gear.png
+7131c4607fab96a84fe7cc1ed3a94ba1844a22d1 assets/crowtech/textures/item/emerald_plate.png
 fed4918c05a0c50b171a794d0154fd81b4f04439 assets/crowtech/textures/item/gold_dust.png
 c7d0f5ef050cf7d63b925ee35ac5af10ce4c31a5 assets/crowtech/textures/item/gold_gear.png
 ca8041114e583cb88c727f53952f24ab4d860e0a assets/crowtech/textures/item/gold_plate.png
@@ -87,6 +96,9 @@ b5430cc044293da97a0c1ae6a27956927da9e290 assets/crowtech/textures/item/iron_dust
 29197b557945f1ae4dee5b88fc1b9841e22dec5a assets/crowtech/textures/item/iron_plate.png
 63e23751ab9f734e1cdc36c3ba5af00954ccc595 assets/crowtech/textures/item/iron_rod.png
 9ef13a43f91318b26b5d26c853a2a72077e91613 assets/crowtech/textures/item/iron_wire.png
+374829c3558eb27547853e9401a2094719dcd832 assets/crowtech/textures/item/lapis_dust.png
+abd240251ef7246958eca9f161dc3a849ace2bdd assets/crowtech/textures/item/lapis_gear.png
+c8de498cad478b95d7632311b5d047f0339f71c6 assets/crowtech/textures/item/lapis_plate.png
 8dfb72ff84b2d4cd18a016b7e71dfd13637e3f51 assets/crowtech/textures/item/lead_dust.png
 441a0346c018ca11a4fbfc1f1e83c008438f4f09 assets/crowtech/textures/item/lead_gear.png
 9716f2096709bcac5df960904260c51ce03ebcfa assets/crowtech/textures/item/lead_ingot.png
@@ -94,6 +106,9 @@ b5430cc044293da97a0c1ae6a27956927da9e290 assets/crowtech/textures/item/iron_dust
 f1ffd524f3eea2a2d1250d93b612dc055771cfac assets/crowtech/textures/item/lead_plate.png
 9990b4ac91db5b39e6da768b3b108a0b3c94aac1 assets/crowtech/textures/item/lead_rod.png
 f0429fe439585fcb2197831d447b7f14285fc612 assets/crowtech/textures/item/lead_wire.png
+b5f81bf5238ede83b646afecdbc760afc872cc20 assets/crowtech/textures/item/nether_quartz_dust.png
+978489646656bb142a361ed4e4f0f27d62961d40 assets/crowtech/textures/item/nether_quartz_gear.png
+0b9f3f9bb7c71a720662011cdbf7e4fec764cef2 assets/crowtech/textures/item/nether_quartz_plate.png
 448a7a3193dc27821f0ed420a87d68b8f62a1462 assets/crowtech/textures/item/nickel_dust.png
 08bee7dddf10822c74deecbf0fb03e9e98bfb6ac assets/crowtech/textures/item/nickel_gear.png
 109351893c86ee18492a354cccddf420a76012c1 assets/crowtech/textures/item/nickel_ingot.png
@@ -134,6 +149,10 @@ e7a6e54a725650c3a8aa66933b5a6bb4ae0ac41e assets/crowtech/textures/item/rose_gold
 468331c8c91d1929431eb5bf65f0ca12ad6f34db assets/crowtech/textures/item/rose_gold_plate.png
 5ab51839a8757b2a8f2efeb38c3bded659223634 assets/crowtech/textures/item/rose_gold_rod.png
 061cffa7d6a10a9f286a85a8aca6bf5684af667e assets/crowtech/textures/item/rose_gold_wire.png
+2607ce16e48478b0c3e3de9e060d110fe18efa3b assets/crowtech/textures/item/ruby.png
+b06c5739d059190a86ea27481775d72c90510061 assets/crowtech/textures/item/ruby_dust.png
+19df2e2a2a81dbd1aea2375e1e2abac1c8667d8b assets/crowtech/textures/item/ruby_gear.png
+9601f402af3ba7070e1ccc56fd59bbe2fea94b57 assets/crowtech/textures/item/ruby_plate.png
 7718944257b28736cbf7fdb7a684e0c68be4e9ce assets/crowtech/textures/item/silver_dust.png
 7273b8287fbcb956a048f32879f4aeb746fbdda0 assets/crowtech/textures/item/silver_gear.png
 83e6f304b0a428252f6150b18d195fec92e59b49 assets/crowtech/textures/item/silver_ingot.png

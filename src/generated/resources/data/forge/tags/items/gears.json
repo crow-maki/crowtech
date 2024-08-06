@@ -1,0 +1,31 @@
+{
+  "values": [
+    "crowtech:aluminum_gear",
+    "crowtech:black_bronze_gear",
+    "crowtech:brass_gear",
+    "crowtech:bronze_gear",
+    "crowtech:copper_gear",
+    "crowtech:diamond_gear",
+    "crowtech:electrum_gear",
+    "crowtech:emerald_gear",
+    "crowtech:gold_gear",
+    "crowtech:invar_gear",
+    "crowtech:iridium_gear",
+    "crowtech:iron_gear",
+    "crowtech:lapis_gear",
+    "crowtech:lead_gear",
+    "crowtech:nether_quartz_gear",
+    "crowtech:nickel_gear",
+    "crowtech:osmium_gear",
+    "crowtech:platinum_gear",
+    "crowtech:rose_gold_gear",
+    "crowtech:ruby_gear",
+    "crowtech:silver_gear",
+    "crowtech:steel_gear",
+    "crowtech:tin_gear",
+    "crowtech:titanium_gear",
+    "crowtech:tungsten_gear",
+    "crowtech:uranium_gear",
+    "crowtech:zinc_gear"
+  ]
+}

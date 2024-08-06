@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-01T02:00:31.1201727	Block States: crowtech
+// 1.20.1	2024-08-05T17:19:23.0994366	Block States: crowtech
 f829a188e99d85268541362e4cb66594b5d37a8d assets/crowtech/blockstates/aluminum_ore.json
 db100d1f0ffd2e0f871c5da5b02e909845e28d41 assets/crowtech/blockstates/deepslate_aluminum_ore.json
 75b757ac6d81df6b103315d2e312797975b39f43 assets/crowtech/blockstates/deepslate_iridium_ore.json
@@ -6,6 +6,7 @@ d166c77af088f1759fca5f30dd7ce23300d4b662 assets/crowtech/blockstates/deepslate_l
 ff5382dd288ee48b94d772a2faf9f716c50cbcaa assets/crowtech/blockstates/deepslate_nickel_ore.json
 209feaaef036bf7b3d1c5d34a07f7735e8e10da0 assets/crowtech/blockstates/deepslate_osmium_ore.json
 e3bae639c406df03784d809a61197cee3df4d2e8 assets/crowtech/blockstates/deepslate_platinum_ore.json
+cf81870915e8de57443db5781ad9ad6dddde5bae assets/crowtech/blockstates/deepslate_ruby_ore.json
 0a4850a527ed9b6dc2e4a62c7b3f5b5767d4de73 assets/crowtech/blockstates/deepslate_silver_ore.json
 97448c5c14f7d1fa909ad40d79bacb9350ce2c46 assets/crowtech/blockstates/deepslate_tin_ore.json
 86e7b2661b0223ea18fb9fb27143493315fe0afb assets/crowtech/blockstates/deepslate_titanium_ore.json
@@ -17,6 +18,7 @@ c819c044505dd134ada4795fa6f9361db25b51e7 assets/crowtech/blockstates/iridium_ore
 dbe978906ebc76197f9d8f1ee155548570742031 assets/crowtech/blockstates/nickel_ore.json
 0d932c45d538e70c440d0173df61658b6b04eff3 assets/crowtech/blockstates/osmium_ore.json
 24a6579ad59e0add38025de018117dc33f28dc22 assets/crowtech/blockstates/platinum_ore.json
+30e9e9c964e3b25738cba5efeda37058eed75587 assets/crowtech/blockstates/ruby_ore.json
 b6cf991f7e019236f8ac8f271d80e220c16834f9 assets/crowtech/blockstates/silver_ore.json
 a43f5c48497bf953c0091703b84699f6b84a1f04 assets/crowtech/blockstates/tin_ore.json
 213534e7b0c349f18ed70dead501d62f430477e0 assets/crowtech/blockstates/titanium_ore.json
@@ -30,6 +32,7 @@ f3b3becee1f8a2f4c250a27b7f87911f1be956e4 assets/crowtech/models/block/deepslate_
 7a2bbad909a1fae58e6e7aef27e9aa313da450a8 assets/crowtech/models/block/deepslate_nickel_ore.json
 34eb7280ce95df8f924caf9d7ff9adc4019c112d assets/crowtech/models/block/deepslate_osmium_ore.json
 cdf6d8a543130f22afea2c2cfeafaa37c826680b assets/crowtech/models/block/deepslate_platinum_ore.json
+06d1a9b21b842a1f10a6341ecb95b5504ede9d46 assets/crowtech/models/block/deepslate_ruby_ore.json
 713903a41734951c7ca5c42c920796c5a4855fff assets/crowtech/models/block/deepslate_silver_ore.json
 ae30c72568c853f7ece9b6fe04d69d0450473750 assets/crowtech/models/block/deepslate_tin_ore.json
 f7908e2cec6a57ec45df5bea19d29e37e6314779 assets/crowtech/models/block/deepslate_titanium_ore.json
@@ -41,6 +44,7 @@ b3de97d16349be2ed3c729fab801327cd3b6adeb assets/crowtech/models/block/deepslate_
 69562d0e8f63ae569635a9ab510a92aa202f2149 assets/crowtech/models/block/nickel_ore.json
 1f0c1b0e105818afd163bafc23a455dcc7636fca assets/crowtech/models/block/osmium_ore.json
 7911a6f878609e84cfc935f904142a0d2e6f467d assets/crowtech/models/block/platinum_ore.json
+ee6bdec91d4017128a00060f5a024a1f60800c88 assets/crowtech/models/block/ruby_ore.json
 f8f40e84e0a979a9893c0b3be6cfbc92c2721f96 assets/crowtech/models/block/silver_ore.json
 48e6636bab2673532e58259a1fdb9af12791aed0 assets/crowtech/models/block/tin_ore.json
 7b3043d863a92b19e1b13911e087f70001cfcb87 assets/crowtech/models/block/titanium_ore.json
@@ -54,6 +58,7 @@ c86dc34fbe6fcc8af86c5c8c64d58a6eff27f69f assets/crowtech/models/item/deepslate_l
 db874bedf87bc3872639edbb1162b2536b5c1697 assets/crowtech/models/item/deepslate_nickel_ore.json
 8ba19e3acafc59c2a5a77ede588fe959065f6a59 assets/crowtech/models/item/deepslate_osmium_ore.json
 2594cb99d70424eec00ea8c8e80ece3677c7dd35 assets/crowtech/models/item/deepslate_platinum_ore.json
+39aa0d5b404ba97fd5192a6d710739106d68d3ed assets/crowtech/models/item/deepslate_ruby_ore.json
 2a1f3908abccb7a9c8d25564742a8f4b6a731c4e assets/crowtech/models/item/deepslate_silver_ore.json
 31ca5108841260799247553492324ca70ad1e34b assets/crowtech/models/item/deepslate_tin_ore.json
 78aedfacb7e9d41232deb6cffc5e6c9765dc9d5d assets/crowtech/models/item/deepslate_titanium_ore.json
@@ -65,6 +70,7 @@ fba8593d3e7f4a5eef026ea0690ceb8f7b26803b assets/crowtech/models/item/iridium_ore
 8514d256b3ef08c501d4e848c2b82c941192844f assets/crowtech/models/item/nickel_ore.json
 b3bc5ed3614f838d91d20a9df6e725bc3b9b923f assets/crowtech/models/item/osmium_ore.json
 c9a910f1816a2e1f92e8fd5ee47de55d40052b56 assets/crowtech/models/item/platinum_ore.json
+d1d83e3dbca1fe999c3fc0c67e4e6c2544fa8074 assets/crowtech/models/item/ruby_ore.json
 431a3231a779011ddb5c58774dbc212260036d30 assets/crowtech/models/item/silver_ore.json
 3d92ec1d893dee6462e71c67518bd4140e956251 assets/crowtech/models/item/tin_ore.json
 a87e0ee58c4ba07d773f195c00fafba689c6b22a assets/crowtech/models/item/titanium_ore.json

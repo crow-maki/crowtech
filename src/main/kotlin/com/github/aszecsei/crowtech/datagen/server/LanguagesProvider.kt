@@ -29,9 +29,18 @@ class LanguagesProvider(packOutput: PackOutput): LanguageProvider(packOutput, Cr
             val mat = MaterialRegistry.MATERIALS[id]!!
             this.addItem(item, "${mat.name} Ingot")
         }
+        ItemRegistry.GEMS.forEach { (id, item) ->
+            val mat = MaterialRegistry.MATERIALS[id]!!
+            this.addItem(item, mat.name)
+        }
         ItemRegistry.NUGGETS.forEach { (id, item) ->
             val mat = MaterialRegistry.MATERIALS[id]!!
-            this.addItem(item, "${mat.name} Nugget")
+            if (mat.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
+                this.addItem(item, "${mat.name} Nugget")
+            }
+            if (mat.properties.containsKey(MaterialProperty.GEM_PROPERTY)) {
+                this.addItem(item, "${mat.name} Shard")
+            }
         }
         ItemRegistry.DUSTS.forEach { (id, item) ->
             val mat = MaterialRegistry.MATERIALS[id]!!

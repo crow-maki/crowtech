@@ -16,6 +16,7 @@ object ItemRegistry {
     val ADVANCEMENT_ICON by ITEMS.registerObject("advancement_icon") { Item(Item.Properties()) }
 
     val INGOTS = TreeMap<String, RegistryObject<Item>>()
+    val GEMS = TreeMap<String, RegistryObject<Item>>()
     val RAW_ORES = TreeMap<String, RegistryObject<Item>>()
     val NUGGETS = TreeMap<String, RegistryObject<Item>>()
     val DUSTS = TreeMap<String, RegistryObject<Item>>()
@@ -39,10 +40,21 @@ object ItemRegistry {
                     INGOTS[id] = ITEMS.register("${id}_ingot") { Item(Item.Properties()) }
                 }
             }
+            if (material.properties.containsKey(MaterialProperty.GEM_PROPERTY)) {
+                val gemProp = material.get(MaterialProperty.GEM_PROPERTY)
+                if (gemProp.generate) {
+                    GEMS[id] = ITEMS.register(id) { Item(Item.Properties()) }
+                }
+            }
             if (material.properties.containsKey(MaterialProperty.NUGGET_PROPERTY)) {
                 val nuggetProp = material.get(MaterialProperty.NUGGET_PROPERTY)
                 if (nuggetProp.generate) {
-                    NUGGETS[id] = ITEMS.register("${id}_nugget") { Item(Item.Properties()) }
+                    if (material.properties.containsKey(MaterialProperty.INGOT_PROPERTY)) {
+                        NUGGETS[id] = ITEMS.register("${id}_nugget") { Item(Item.Properties()) }
+                    }
+                    if (material.properties.containsKey(MaterialProperty.GEM_PROPERTY)) {
+                        NUGGETS[id] = ITEMS.register("${id}_shard") { Item(Item.Properties()) }
+                    }
                 }
             }
             if (material.properties.containsKey(MaterialProperty.DUST_PROPERTY)) {

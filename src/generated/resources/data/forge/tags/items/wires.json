@@ -1,0 +1,26 @@
+{
+  "values": [
+    "crowtech:aluminum_wire",
+    "crowtech:black_bronze_wire",
+    "crowtech:brass_wire",
+    "crowtech:bronze_wire",
+    "crowtech:copper_wire",
+    "crowtech:electrum_wire",
+    "crowtech:gold_wire",
+    "crowtech:invar_wire",
+    "crowtech:iridium_wire",
+    "crowtech:iron_wire",
+    "crowtech:lead_wire",
+    "crowtech:nickel_wire",
+    "crowtech:osmium_wire",
+    "crowtech:platinum_wire",
+    "crowtech:rose_gold_wire",
+    "crowtech:silver_wire",
+    "crowtech:steel_wire",
+    "crowtech:tin_wire",
+    "crowtech:titanium_wire",
+    "crowtech:tungsten_wire",
+    "crowtech:uranium_wire",
+    "crowtech:zinc_wire"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "values": [
+    "crowtech:aluminum_rod",
+    "crowtech:black_bronze_rod",
+    "crowtech:brass_rod",
+    "crowtech:bronze_rod",
+    "crowtech:copper_rod",
+    "crowtech:electrum_rod",
+    "crowtech:gold_rod",
+    "crowtech:invar_rod",
+    "crowtech:iridium_rod",
+    "crowtech:iron_rod",
+    "crowtech:lead_rod",
+    "crowtech:nickel_rod",
+    "crowtech:osmium_rod",
+    "crowtech:platinum_rod",
+    "crowtech:rose_gold_rod",
+    "crowtech:silver_rod",
+    "crowtech:steel_rod",
+    "crowtech:tin_rod",
+    "crowtech:titanium_rod",
+    "crowtech:tungsten_rod",
+    "crowtech:uranium_rod",
+    "crowtech:zinc_rod"
+  ]
+}

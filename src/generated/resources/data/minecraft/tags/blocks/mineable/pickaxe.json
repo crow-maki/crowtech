@@ -1,0 +1,30 @@
+{
+  "values": [
+    "crowtech:deepslate_aluminum_ore",
+    "crowtech:aluminum_ore",
+    "crowtech:deepslate_iridium_ore",
+    "crowtech:iridium_ore",
+    "crowtech:deepslate_lead_ore",
+    "crowtech:lead_ore",
+    "crowtech:deepslate_nickel_ore",
+    "crowtech:nickel_ore",
+    "crowtech:deepslate_osmium_ore",
+    "crowtech:osmium_ore",
+    "crowtech:deepslate_platinum_ore",
+    "crowtech:platinum_ore",
+    "crowtech:deepslate_ruby_ore",
+    "crowtech:ruby_ore",
+    "crowtech:deepslate_silver_ore",
+    "crowtech:silver_ore",
+    "crowtech:deepslate_tin_ore",
+    "crowtech:tin_ore",
+    "crowtech:deepslate_titanium_ore",
+    "crowtech:titanium_ore",
+    "crowtech:deepslate_tungsten_ore",
+    "crowtech:tungsten_ore",
+    "crowtech:deepslate_uranium_ore",
+    "crowtech:uranium_ore",
+    "crowtech:deepslate_zinc_ore",
+    "crowtech:zinc_ore"
+  ]
+}

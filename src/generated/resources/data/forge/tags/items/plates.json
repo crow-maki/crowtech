@@ -1,0 +1,31 @@
+{
+  "values": [
+    "crowtech:aluminum_plate",
+    "crowtech:black_bronze_plate",
+    "crowtech:brass_plate",
+    "crowtech:bronze_plate",
+    "crowtech:copper_plate",
+    "crowtech:diamond_plate",
+    "crowtech:electrum_plate",
+    "crowtech:emerald_plate",
+    "crowtech:gold_plate",
+    "crowtech:invar_plate",
+    "crowtech:iridium_plate",
+    "crowtech:iron_plate",
+    "crowtech:lapis_plate",
+    "crowtech:lead_plate",
+    "crowtech:nether_quartz_plate",
+    "crowtech:nickel_plate",
+    "crowtech:osmium_plate",
+    "crowtech:platinum_plate",
+    "crowtech:rose_gold_plate",
+    "crowtech:ruby_plate",
+    "crowtech:silver_plate",
+    "crowtech:steel_plate",
+    "crowtech:tin_plate",
+    "crowtech:titanium_plate",
+    "crowtech:tungsten_plate",
+    "crowtech:uranium_plate",
+    "crowtech:zinc_plate"
+  ]
+}

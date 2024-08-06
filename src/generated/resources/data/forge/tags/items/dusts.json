@@ -1,0 +1,31 @@
+{
+  "values": [
+    "crowtech:aluminum_dust",
+    "crowtech:black_bronze_dust",
+    "crowtech:brass_dust",
+    "crowtech:bronze_dust",
+    "crowtech:copper_dust",
+    "crowtech:diamond_dust",
+    "crowtech:electrum_dust",
+    "crowtech:emerald_dust",
+    "crowtech:gold_dust",
+    "crowtech:invar_dust",
+    "crowtech:iridium_dust",
+    "crowtech:iron_dust",
+    "crowtech:lapis_dust",
+    "crowtech:lead_dust",
+    "crowtech:nether_quartz_dust",
+    "crowtech:nickel_dust",
+    "crowtech:osmium_dust",
+    "crowtech:platinum_dust",
+    "crowtech:rose_gold_dust",
+    "crowtech:ruby_dust",
+    "crowtech:silver_dust",
+    "crowtech:steel_dust",
+    "crowtech:tin_dust",
+    "crowtech:titanium_dust",
+    "crowtech:tungsten_dust",
+    "crowtech:uranium_dust",
+    "crowtech:zinc_dust"
+  ]
+}

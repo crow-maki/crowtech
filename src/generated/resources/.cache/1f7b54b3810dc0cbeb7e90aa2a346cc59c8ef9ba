@@ -1,0 +1,8 @@
+// 1.20.1	2024-08-05T17:19:23.1044383	Tags for minecraft:block mod id crowtech
+7d6d1bff6591866c165c09593ec9234ec6e14a36 data/forge/tags/blocks/ores.json
+bf11276d03aaafed1e1ad6560a5876d46ad3e994 data/forge/tags/blocks/ores_in_ground/deepslate.json
+5721874ce42c82e047772640073834439933f6bc data/forge/tags/blocks/ores_in_ground/stone.json
+7d6d1bff6591866c165c09593ec9234ec6e14a36 data/minecraft/tags/blocks/mineable/pickaxe.json
+ba0ed6b57f460202804fd6ea9c11b9ff7605f881 data/minecraft/tags/blocks/needs_diamond_tool.json
+d26b4dd5b3f08d03cf4c2b9b033fcfb88ae291da data/minecraft/tags/blocks/needs_iron_tool.json
+cfeb8fc328f23e76f954adb27f309cd24581048c data/minecraft/tags/blocks/needs_stone_tool.json

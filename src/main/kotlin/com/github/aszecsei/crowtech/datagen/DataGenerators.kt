@@ -5,6 +5,8 @@ import com.github.aszecsei.crowtech.datagen.client.BlockStatesProvider
 import com.github.aszecsei.crowtech.datagen.client.ItemModelsProvider
 import com.github.aszecsei.crowtech.datagen.client.TexturesProvider
 import com.github.aszecsei.crowtech.datagen.server.AdvancementsProvider
+import com.github.aszecsei.crowtech.datagen.server.BlockTagProvider
+import com.github.aszecsei.crowtech.datagen.server.ItemTagProvider
 import com.github.aszecsei.crowtech.datagen.server.LanguagesProvider
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.eventbus.api.SubscribeEvent
@@ -18,9 +20,12 @@ object DataGenerators {
         val generator = event.generator
         val packOutput = generator.packOutput
         val fileHelper = event.existingFileHelper
+        val lookupProvider = event.lookupProvider
 
         generator.addProvider(event.includeServer(), AdvancementsProvider(generator))
         generator.addProvider(event.includeServer(), LanguagesProvider(packOutput))
+        val blockTagGenerator = generator.addProvider(event.includeServer(), BlockTagProvider(packOutput, lookupProvider, fileHelper))
+        generator.addProvider(event.includeServer(), ItemTagProvider(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), fileHelper))
 
         generator.addProvider(event.includeClient(), TexturesProvider(packOutput, fileHelper))
         generator.addProvider(event.includeClient(), BlockStatesProvider(generator, fileHelper))

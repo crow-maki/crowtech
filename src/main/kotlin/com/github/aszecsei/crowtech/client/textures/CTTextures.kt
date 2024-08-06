@@ -80,6 +80,20 @@ object CTTextures {
                 }
             }
 
+            if (material.properties.containsKey(MaterialProperty.GEM_PROPERTY)) {
+                val gemProp = material.get(MaterialProperty.GEM_PROPERTY)
+                if (gemProp.generate) {
+                    defer.accept { ->
+                        val template = "crowtech:textures/materialsets/gems/${gemProp.texture.path}.png"
+                        mtm.getAssetAsTexture(template).use { top ->
+                            TextureHelper.colorize(top, colorRamp)
+                            val texturePath = "crowtech:textures/item/${material.id}.png"
+                            mtm.addTexture(texturePath, top, true)
+                        }
+                    }
+                }
+            }
+
             if (material.properties.containsKey(MaterialProperty.NUGGET_PROPERTY)) {
                 val nuggetProp = material.get(MaterialProperty.NUGGET_PROPERTY)
                 if (nuggetProp.generate) {

@@ -12,6 +12,7 @@ class MaterialProperty<T>(val id: String, val defaultValue: T) {
         val RAW_PROPERTY = MaterialProperty<RawProperty>("raw_ore", RawProperty())
         val MEAN_RGB = MaterialProperty<Int>("mean_rgb", 0)
         val INGOT_PROPERTY = MaterialProperty<IngotProperty>("ingot", IngotProperty())
+        val GEM_PROPERTY = MaterialProperty<GemProperty>("gem", GemProperty())
         val DUST_PROPERTY = MaterialProperty<DustProperty>("dust", DustProperty())
         val NUGGET_PROPERTY = MaterialProperty<NuggetProperty>("nugget", NuggetProperty())
 

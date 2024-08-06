@@ -1,0 +1,24 @@
+{
+  "values": [
+    "crowtech:aluminum_nugget",
+    "crowtech:black_bronze_nugget",
+    "crowtech:brass_nugget",
+    "crowtech:bronze_nugget",
+    "crowtech:copper_nugget",
+    "crowtech:electrum_nugget",
+    "crowtech:invar_nugget",
+    "crowtech:iridium_nugget",
+    "crowtech:lead_nugget",
+    "crowtech:nickel_nugget",
+    "crowtech:osmium_nugget",
+    "crowtech:platinum_nugget",
+    "crowtech:rose_gold_nugget",
+    "crowtech:silver_nugget",
+    "crowtech:steel_nugget",
+    "crowtech:tin_nugget",
+    "crowtech:titanium_nugget",
+    "crowtech:tungsten_nugget",
+    "crowtech:uranium_nugget",
+    "crowtech:zinc_nugget"
+  ]
+}

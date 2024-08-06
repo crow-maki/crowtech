@@ -1,0 +1,16 @@
+{
+  "values": [
+    "crowtech:raw_aluminum",
+    "crowtech:raw_iridium",
+    "crowtech:raw_lead",
+    "crowtech:raw_nickel",
+    "crowtech:raw_osmium",
+    "crowtech:raw_platinum",
+    "crowtech:raw_silver",
+    "crowtech:raw_tin",
+    "crowtech:raw_titanium",
+    "crowtech:raw_tungsten",
+    "crowtech:raw_uranium",
+    "crowtech:raw_zinc"
+  ]
+}

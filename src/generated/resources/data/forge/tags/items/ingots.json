@@ -1,0 +1,23 @@
+{
+  "values": [
+    "crowtech:aluminum_ingot",
+    "crowtech:black_bronze_ingot",
+    "crowtech:brass_ingot",
+    "crowtech:bronze_ingot",
+    "crowtech:electrum_ingot",
+    "crowtech:invar_ingot",
+    "crowtech:iridium_ingot",
+    "crowtech:lead_ingot",
+    "crowtech:nickel_ingot",
+    "crowtech:osmium_ingot",
+    "crowtech:platinum_ingot",
+    "crowtech:rose_gold_ingot",
+    "crowtech:silver_ingot",
+    "crowtech:steel_ingot",
+    "crowtech:tin_ingot",
+    "crowtech:titanium_ingot",
+    "crowtech:tungsten_ingot",
+    "crowtech:uranium_ingot",
+    "crowtech:zinc_ingot"
+  ]
+}
