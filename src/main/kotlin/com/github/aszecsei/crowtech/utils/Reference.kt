@@ -1,5 +1,6 @@
 package com.github.aszecsei.crowtech.utils
 
+import com.github.aszecsei.crowtech.CrowTech
 import net.minecraft.resources.ResourceLocation
 
 object Reference {
@@ -8,6 +9,9 @@ object Reference {
     }
     fun vanilla(path: String): ResourceLocation {
         return ResourceLocation("minecraft", path)
+    }
+    fun ct(path: String): ResourceLocation {
+        return ResourceLocation(CrowTech.ID, path)
     }
     fun ingot(path: String): ResourceLocation {
         return forge("ingots/$path")

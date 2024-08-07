@@ -2,6 +2,7 @@ package com.github.aszecsei.crowtech.datagen.server
 
 import com.github.aszecsei.crowtech.CrowTech
 import com.github.aszecsei.crowtech.common.materials.properties.MaterialProperty
+import com.github.aszecsei.crowtech.common.registries.FluidRegistry
 import com.github.aszecsei.crowtech.common.registries.ItemRegistry
 import com.github.aszecsei.crowtech.common.registries.MaterialRegistry
 import net.minecraft.data.PackOutput
@@ -63,10 +64,18 @@ class LanguagesProvider(packOutput: PackOutput): LanguageProvider(packOutput, Cr
             val mat = MaterialRegistry.MATERIALS[id]!!
             this.addItem(item, "${mat.name} Wire")
         }
+        FluidRegistry.BUCKETS.forEach { (id, item) ->
+            val mat = MaterialRegistry.MATERIALS[id]!!
+            this.addItem(item, "Bucket of Molten ${mat.name}")
+        }
     }
 
     private fun addBlocks() {
-
+        FluidRegistry.LIQUID_BLOCKS.forEach { (id, fluid) ->
+            val mat = MaterialRegistry.MATERIALS[id]!!
+            this.addBlock(fluid, "Molten ${mat.name}")
+            this.add("fluid_type.${CrowTech.ID}.molten_${mat.id}", "Molten ${mat.name}")
+        }
     }
 
     private fun addEntities() {

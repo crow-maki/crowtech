@@ -2,6 +2,7 @@ package com.github.aszecsei.crowtech.datagen.client
 
 import com.github.aszecsei.crowtech.CrowTech
 import com.github.aszecsei.crowtech.common.registries.BlockRegistry
+import com.github.aszecsei.crowtech.common.registries.FluidRegistry
 import com.github.aszecsei.crowtech.common.registries.ItemRegistry
 import net.minecraft.data.DataGenerator
 import net.minecraft.resources.ResourceLocation
@@ -35,9 +36,13 @@ class ItemModelsProvider(generator: DataGenerator, fileHelper: ExistingFileHelpe
         ItemRegistry.ITEMS.entries.stream().filter { item -> item.get() != ItemRegistry.ADVANCEMENT_ICON }
             .forEach { item ->
                 val name = item.id.path
-                if (!name.contains("bucket")) {
-                    withExistingParent(name, generated).texture("layer0", res(name))
-                }
+                withExistingParent(name, generated).texture("layer0", res(name))
+            }
+
+        FluidRegistry.FLUID_BUCKETS.entries.stream().filter { item -> item.get() != ItemRegistry.ADVANCEMENT_ICON }
+            .forEach { item ->
+                val name = item.id.path
+                withExistingParent(name, generated).texture("layer0", res(name))
             }
 
         registerAdvancementItem()

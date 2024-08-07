@@ -177,6 +177,29 @@ object CTTextures {
                     }
                 }
             }
+
+            if (material.properties.containsKey(MaterialProperty.FLUID_PROPERTY)) {
+                val path = "crowtech:textures/fluid/"
+                val bucket = path + "bucket.png"
+                val bucket_content = path + "bucket_content.png"
+                val fluidProp = material.get(MaterialProperty.FLUID_PROPERTY)
+
+                // Bucket
+                try {
+                    val old_bucket_image = mtm.getAssetAsTexture(bucket)
+                    val bucket_content_image = mtm.getAssetAsTexture(bucket_content)
+                    TextureHelper.colorize(bucket_content_image, colorRamp)
+                    val bucket_image = TextureHelper.blend(old_bucket_image, bucket_content_image)
+                    old_bucket_image.close()
+
+                    if (fluidProp.isGas) {
+                        TextureHelper.flip(bucket_image)
+                    }
+                    mtm.addTexture("crowtech:textures/item/molten_${material.id}_bucket.png", bucket_image)
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                }
+            }
         }
 
         return CompletableFuture.allOf(*futures.toTypedArray())

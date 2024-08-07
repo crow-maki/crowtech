@@ -42,6 +42,10 @@ object CrowTech {
         ItemRegistry.ITEMS.register(MOD_BUS)
         BlockRegistry.BLOCKS.register(MOD_BUS)
         BlockRegistry.BLOCK_ITEMS.register(MOD_BUS)
+        FluidRegistry.FLUIDS.register(MOD_BUS)
+        FluidRegistry.FLUID_TYPES.register(MOD_BUS)
+        FluidRegistry.FLUID_BLOCKS.register(MOD_BUS)
+        FluidRegistry.FLUID_BUCKETS.register(MOD_BUS)
 
         val obj = runForDist(
             clientTarget = {

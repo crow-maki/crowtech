@@ -2,7 +2,9 @@ package com.github.aszecsei.crowtech.common.registries
 
 import com.github.aszecsei.crowtech.CrowTech
 import com.github.aszecsei.crowtech.common.materials.properties.MaterialProperty
+import net.minecraft.world.item.BucketItem
 import net.minecraft.world.item.Item
+import net.minecraft.world.item.Items
 import net.minecraft.world.level.ItemLike
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
@@ -88,6 +90,7 @@ object ItemRegistry {
                     WIRES[id] = ITEMS.register("${id}_wire") { Item(Item.Properties()) }
                 }
             }
+
         }
     }
 

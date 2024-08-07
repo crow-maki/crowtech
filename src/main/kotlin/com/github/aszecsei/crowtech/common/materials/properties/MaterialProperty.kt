@@ -15,6 +15,7 @@ class MaterialProperty<T>(val id: String, val defaultValue: T) {
         val GEM_PROPERTY = MaterialProperty<GemProperty>("gem", GemProperty())
         val DUST_PROPERTY = MaterialProperty<DustProperty>("dust", DustProperty())
         val NUGGET_PROPERTY = MaterialProperty<NuggetProperty>("nugget", NuggetProperty())
+        val FLUID_PROPERTY = MaterialProperty<FluidProperty>("fluid", FluidProperty())
 
         val PLATE_PROPERTY = MaterialProperty<PlateProperty>("plate", PlateProperty())
         val ROD_PROPERTY = MaterialProperty<RodProperty>("rod", RodProperty())
